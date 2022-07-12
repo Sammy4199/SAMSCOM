@@ -1,0 +1,15 @@
+header{
+    position: fixed;
+    font-size: xx-large;
+    margin: 0px;
+    padding: 0px;
+    top: 0px;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    color: white;
+
+}
+.fa-sa{
+    cursor: pointer;
+}

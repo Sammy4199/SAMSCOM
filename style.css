@@ -4,7 +4,8 @@ body{
 }
 
 header{
-    position: fixed;
+   position: fixed;
+   position: relative;
     font-size: xx-large;
     width: 100%;
      background-color: black;
@@ -12,4 +13,11 @@ header{
     color: white;
     margin: 0%;
     cursor: pointer;
+}
+a{
+    color: rgb(113, 216, 216);
+}
+.Sams{
+display: flex;
+justify-content: space-between;
 }

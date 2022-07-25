@@ -15,7 +15,11 @@ header{
     cursor: pointer;
 }
 a{
-    color: rgb(113, 216, 216);
+    color: rgb(77, 17, 17);
+    text-decoration: none;
+}
+.Sam{
+    margin-left: 10px;
 }
 .Sams{
 display: flex;
@@ -29,11 +33,29 @@ justify-content: space-between;
    padding: 0px;
    align-items: top;
 }
-.media{
+.socials {
     display: grid;
-    grid-gap: 4px;
-    grid-template-rows: repeat(4, 40px);
-    list-style: none;
-    padding: 0px;
-    align-items: top;
+    grid-gap: 40px;
+    grid-template-areas: 
+    'media heading vectorimg'
+    }
+.media{
+   grid-area: media;
+   display: flex;
+   flex-direction: column;
+   grid-gap: 10px;
+   margin-top: 18em;
+   margin-bottom: 12em;
+   margin-left: 10px;
+}
+.pic1{
+    padding: 5px;
+    background: #1d1e20;
+    border-radius: 9px;
+    
+}
+.one{
+    background: url(./Images/pexels-stayhereforu-12641780.jpg);
+    background-position: center;
+    background-size: cover;
 }

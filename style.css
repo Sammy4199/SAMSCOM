@@ -25,19 +25,25 @@ a{
 display: flex;
 justify-content: space-between;
 }
-.Sams .sams-li {
+.sams-li {
     display: grid;
    grid-gap: 4px;
    grid-template-columns: repeat(4, 100px);
    list-style: none;
    padding: 0px;
    align-items: top;
+   font-size: 21px;
 }
+@media (max-width: 800px) { .sams-li{
+    font-size: 16px;
+ }}
 .socials {
     display: grid;
     grid-gap: 40px;
     grid-template-areas: 
-    'media heading vectorimg'
+    'media heading '
+    'media subheading '
+    'media p1 ';
     }
 .media{
    grid-area: media;
@@ -58,4 +64,27 @@ justify-content: space-between;
     background: url(./Images/pexels-stayhereforu-12641780.jpg);
     background-position: center;
     background-size: cover;
+}
+.heading{
+    grid-area: heading;
+    color: #ef4908;
+    font-weight: 400;
+    font-size: 72px;
+    margin-top: 3em; 
+}
+h3{
+    grid-area: subheading;
+    font-family: Poppins;
+    color: aliceblue;
+    margin-top: -7em;
+    font-weight: 500;
+    font-size: 22px;
+}
+.p1 {
+    grid-area: p1;
+    margin-top: -13em;
+    font-family: Poppins;
+    font-size:17px;
+    line-height: 32px;
+    
 }

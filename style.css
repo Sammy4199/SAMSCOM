@@ -16,22 +16,24 @@ header{
     cursor: pointer;
 }
 a{
-    color: rgb(77, 17, 17);
+    color: rgba(255, 255, 255, .8);
     text-decoration: none;
 }
 .Sam{
+    font-size: xx-large;
+    font-weight:100
     margin-left: 10px;
     margin-top: 32px;
     animation-name: sam;
-    animation-duration: 2s;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
 }
 @keyframes sam{
     0%{
-        color: aquamarine;
+        color: rgba(85, 86, 86, .3);
     }
     50%{
-        color: aqua;
+        color: rgb(233, 242, 242);
     }
     100% {
         color: black;
@@ -92,7 +94,7 @@ justify-content: space-between;
     
 }
 .one{
-    background: url(./Images/pexels-stayhereforu-12641780.jpg);
+    background: url("/Images/shubham-dhage-t0Bv0OBQuTg-unsplash.jpg");
     background-position: center;
     background-size: cover;
     height: auto;
@@ -107,7 +109,7 @@ justify-content: space-between;
 }
 .heading:hover{
     transition: 0.9s;
-    color: rgba(74, 77, 175, 0.881);
+    color: rgba(197, 117, 68, 0.881);
     transform: translateY(-18px);
 }
 h3{
@@ -126,22 +128,67 @@ h3{
     line-height: 32px;
 }
 .two{
-    margin-top: 20px;
     background: url(./Images/pexels-cup-of-couple-8474179.jpg);
     background-position: center;
     background-size: cover;
+    text-align: center;
     display: grid;
-    grid-gap: 20px;
     grid-template-areas: 
-    'vans sect'
-    'vans sect';
+    'vanss stories'
+    'World-joy p2';
     
 }
 .World-joy{
+    grid-area: World-joy;
     justify-items: start;
     margin-left: 20px;
     width: 650px;
     height: 350px; 
-    box-shadow: 0 3px 5px rgba(104, 104, 104, 0.5); 
+    box-shadow: 0 3px 5px rgba(75, 73, 73, 1.0); 
     border-radius: 15px;
+}
+.vanss{
+    grid-area: vanss;
+   margin-top: 3em;
+   font-size: 30px;
+   font-weight: bold;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.stories{
+    color: whitesmoke;
+    grid-area: stories;
+    margin-top: 7em;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.p2{
+    grid-area: p2;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.bnt{
+    border: 0px wheat solid;
+    border-radius: 5px;
+    height: 7%;
+    background-color: #1d1e20;
+    
+}
+.bnt:hover{
+    background-color: rgb(130, 89, 32);
+}
+.bnt-a{
+    color: azure;
+}
+@media (max-width: 1000px) { 
+.two{
+    display: inline-table;
+}
+  .stories{
+    color: #000000;
+    margin-top: 2em;
+  }
+  .bnt{
+    height: 30px;
+  }
 }

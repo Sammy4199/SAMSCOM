@@ -197,9 +197,18 @@ justify-content: space-between;
     background-position: center;
     background-size: cover;
     color: #000000;
+    height: 800px;
+}
+.Phase1 {
+    height:50%;
+}
+.Phase2{
+    height: 45%;
+    margin-top: 10px;
 }
 .Phase{
     display: flex;
+    
 }
 .projects{
     background-image:linear-gradient(45deg, rgba(237, 165, 164, 0.75),  

@@ -221,6 +221,34 @@ justify-content: space-between;
     margin-left: 10px;
     margin-right: 10px;
 }
-.singin-up{
-  color: ;  
+#ABOUT{
+ display: flex;
+  flex-direction: column;
+  background: url(./Images/pexels-sena-aykut-10592693.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+}
+.about{
+    color: antiquewhite;
+    font-size: 130px;
+   font-family: sans-serif, 'Times New Roman', Times, serif;
+}
+.aboutp{
+    color: rgb(243, 193, 168);
+    font-size: larger;
+text-align: center;
+}
+.hr{
+    width: 1400px;
+}
+@media (max-width: 1450px) {
+    .hr{
+        display: none;
+    }
+}
+strong{
+    color: rgb(149, 73, 46);
+    font-size: x-large;
+text-align: center;
 }

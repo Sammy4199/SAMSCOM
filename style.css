@@ -248,7 +248,7 @@ text-align: center;
     }
 }
 strong{
-    color: rgb(149, 73, 46);
+    color: rgba(149, 73, 46, 1);
     font-size: x-large;
 text-align: center;
 }

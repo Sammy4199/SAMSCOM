@@ -253,5 +253,24 @@ strong{
 text-align: center;
 }
 .signin-up{
-display: ;
+display: flex ;
+height: 450px;
+}
+.signup, .signin{
+    width: 50%;
+}
+.signin{
+    font-size: large;
+    font-family: monospace, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.signup{
+    font-size: large;
+    font-family: monospace, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+input{
+    border-radius: 10px;
+    background-color: rgba(241, 204, 145, 0.403);
+}
+.submit{
+    background-color: rgb(166, 151, 195);
 }

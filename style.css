@@ -269,8 +269,9 @@ height: 450px;
 }
 input{
     border-radius: 10px;
-    background-color: rgba(241, 204, 145, 0.403);
+    background-color: rgba(166, 151, 195);
+    border: none;
 }
 .submit{
-    background-color: rgb(166, 151, 195);
+    background-color: rgb(128, 0, 75);
 }

@@ -1,5 +1,5 @@
 :root {
-    box-shadow: 0 5px 10px rgba(104, 104, 104, 0.8);
+    --shadow: 4px 20px 30px rgba(68, 83, 106, 0.8);
 }
 body{
     margin: 0px;
@@ -262,10 +262,18 @@ height: 450px;
 .signin{
     font-size: large;
     font-family: monospace, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #6668d9;
+    margin: 50px 10px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
 }
 .signup{
     font-size: large;
     font-family: monospace, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #6668d9;
+    margin: 50px 10px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
 }
 input{
     border-radius: 10px;
@@ -274,4 +282,20 @@ input{
 }
 .submit{
     background-color: rgb(128, 0, 75);
+    cursor: pointer;
+    color: azure;
+}
+.submit:hover{
+    background-color: #ef4908;
+}
+.h3sign{
+    margin-left: 20px;
+    font-weight: 100;
+    font-family: fantasy, 'Times New Roman', Times, serif;
+}
+.items{
+margin-left:75px ;
+}
+.info{
+   
 }

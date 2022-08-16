@@ -253,6 +253,9 @@ strong{
 text-align: center;
 }
 .signin-up{
+    background-image: url(/Images/shubham-dhage-t0Bv0OBQuTg-unsplash.jpg) ;
+    background-position: center;
+    background-size: cover;
 display: flex ;
 height: 450px;
 }

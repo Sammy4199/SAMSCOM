@@ -167,14 +167,14 @@ justify-content: space-between;
     font-size: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.bnt{
+.bnt1{
     border: 0px wheat solid;
     border-radius: 5px;
     height: 7%;
     background-color: #1d1e20;
     
 }
-.bnt:hover{
+.bnt1:hover{
     background-color: rgb(130, 89, 32);
 }
 .bnt-a{
@@ -188,11 +188,10 @@ justify-content: space-between;
     color: #000000;
     margin-top: 2em;
   }
-  .bnt{
-    height: 30px;
-  }
+
 }
 .project{
+    display: flexs;
     background: url(./Images/baim-hanif-pYWuOMhtc6k-unsplash.jpg);
     background-position: center;
     background-size: cover;
@@ -207,9 +206,9 @@ justify-content: space-between;
     margin-top: 10px;
 }
 .Phase{
-    display: flex;
-    
-}
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr ;
+    }
 .projects{
     background-image:linear-gradient(45deg, rgba(237, 165, 164, 0.75),  
      rgba(23, 53, 83, 0.75)), url( ./Images/pexels-céline-12488388.jpg);
@@ -240,11 +239,11 @@ justify-content: space-between;
 text-align: center;
 }
 .hr{
-    width: 1400px;
+    width: 1100px;
 }
-@media (max-width: 1450px) {
+@media (max-width: 1250px) {
     .hr{
-        display: none;
+     display: none;
     }
 }
 strong{
@@ -253,7 +252,7 @@ strong{
 text-align: center;
 }
 .signin-up{
-    background-image: url(/Images/pexels-yura-forrat-12678256.jpg) ;
+    background-image: url(./Images/pexels-yura-forrat-12678256.jpg);
     background-position: center;
     background-size: cover;
 display: flex ;
@@ -279,14 +278,20 @@ height: 450px;
     box-shadow: var(--shadow);
 }
 input{
-    border-radius: 10px;
+    height: 25px;
+    margin-bottom: 5px;
+    border-radius: 5px;
     background-color: rgba(166, 151, 195);
     border: none;
+    align-items: center;
 }
 .submit{
+    width: 100px;
+    height: 40px;
     background-color: rgb(128, 0, 75);
     cursor: pointer;
     color: azure;
+    margin-left: 110px;
 }
 .submit:hover{
     background-color: #ef4908;
@@ -300,6 +305,5 @@ input{
 margin-left:75px ;
 }
 .info{
-
+margin-left: 50px;
 }
-   

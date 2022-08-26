@@ -307,3 +307,27 @@ margin-left:75px ;
 .info{
 margin-left: 50px;
 }
+footer{
+    display: grid;
+    grid-gap: 10%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "span contact";
+    background: #6668d9;
+}
+.gridone{
+    grid-area: span;
+   font-size: 29px;
+   text-align: start;
+}
+.contact{
+    grid-area: contact;
+    margin-left: 40%;
+}
+.contact1{
+    padding: 5px;
+    background: #1d1e20;
+    border-radius: 9px;
+    margin-right: 13%;
+    margin-top: 1px;
+}

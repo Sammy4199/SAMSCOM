@@ -30,7 +30,7 @@ a{
       }
 @keyframes sam{
     0%{
-        color: rgba(85, 86, 86, .3);
+        color: rgba(85, 86, 86, .4);
     }
     50%{
         color: rgb(233, 242, 242);

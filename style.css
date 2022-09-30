@@ -106,7 +106,7 @@ justify-content: space-between;
     font-weight: 400;
     font-size: 72px;
     margin-top: 3em;
-    cursor: none; 
+    cursor: pointer; 
 }
 .heading:hover{
     transition: 0.9s;

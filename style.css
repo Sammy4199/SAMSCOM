@@ -13,7 +13,7 @@ header{
      background-color: black;
     text-align: center;
     color: white;
-    cursor: none;
+    cursor: pointer;
 }
 a{
     color: rgba(255, 255, 255, .8);

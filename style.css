@@ -13,11 +13,11 @@ header{
      background-color: black;
     text-align: center;
     color: white;
-    cursor: pointer;
+    cursor: none;
 }
 a{
     color: rgba(255, 255, 255, .8);
-    text-decoration: none;
+    text-decoration:none;
 }
 .Sam{
     font-size: xx-large;

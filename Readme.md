@@ -1,5 +1,5 @@
 ## Just For Fun
-Creating  A Website For Fun
+A website of a choice 
 
 ## SAMSCOM
 A web page of my interest 

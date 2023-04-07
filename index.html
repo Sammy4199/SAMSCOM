@@ -9,16 +9,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>SAMSCOM</header>
+  <div id="scroll-top">
+  <span id="top-left"></span>
+  <span id="top-right"></span>
+  </div>
+    <header>
+      <h1 class="header">SAMSCOM<h1>
+        <div id="burger">
+          <span id="burger-line"></span>
+          <span id="burger-line"></span>
+          <span id="burger-line"></span>
+        </div>
+    </header>
     <main class="wrapper">  
         <div class="one"> 
      <nav class="Sams">
        <a href=""><h1 class="Sam">SAMS Travels</h1></a>
         <ul class="sams-li">
-            <li><a href="#MAIN">MAIN</a></li>
-            <li><a href="#ABOUT">ABOUT</a></li>
-            <li><a href="#SIGNIN-UP">SIGN IN/UP</a></li>
-            <li><a href="#">CONTACT</a></li>
+            <li><a href="#MAIN" class="menu-li">MAIN</a></li>
+            <li><a href="#ABOUT" class="menu-li">ABOUT</a></li>
+            <li><a href="#SIGNIN-UP" class="menu-li">SIGN IN/UP</a></li>
+            <li><a href="#" class="menu-li">CONTACT</a></li>
         </ul>
       </nav>
         <section class="socials">
@@ -181,5 +192,29 @@
     ---------------------------->
 </footer>
 </body>
+<script>
+  const burger = document.getElementById('burger');
+  const burgerLine = document.getElementById('burger-line')
+  const menu = document.querySelector('.sams-li');
+  const menuLi = document.querySelectorAll('.menu-li');
+  const bntTop = document.getElementById('scroll-top');
+  burger.addEventListener('click', function () {
+      burger.classList.toggle('is-active');
+      menu.classList.toggle('is-active');
+  });
+  menuLi.forEach((item) => {
+    item.onclick = function () {
+        burger.classList.remove('is-active');
+        menu.classList.remove('is-active');
+    }
+  });
+  window.onscroll = function () {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          btnTop.style.display = "block";
+      } else {
+          btnTop.style.display = "none";
+      }
+  }
+</script>
 </html>
 

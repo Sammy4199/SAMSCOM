@@ -140,7 +140,7 @@
         <div class="about"><em>SAMSCOM</em></div>
         <div class="aboutp">The biggest addiction a person can have is discovering the unknown. Once it takes hold, there is no getting out and
            the only way to get your fix is by pushing yourself out of your comfort zone and exploring new horizons, cultural, and
-            places. <hr border-style: none double none none; align="Center" class="hr"> <br><strong> – Stephen from A Backpacker’s Tale</strong></div>
+            places. <hr border-style: none double none none; text-align="Center" class="hr"> <br><strong> – Stephen from A Backpacker’s Tale</strong></div>
       </section>
       <section class="signin-up" id="SIGNIN-UP">
         <div class="signup">
@@ -197,7 +197,7 @@
   const burgerLine = document.getElementById('burger-line')
   const menu = document.querySelector('.sams-li');
   const menuLi = document.querySelectorAll('.menu-li');
-  const bntTop = document.getElementById('scroll-top');
+  
   burger.addEventListener('click', function () {
       burger.classList.toggle('is-active');
       menu.classList.toggle('is-active');
@@ -208,13 +208,18 @@
         menu.classList.remove('is-active');
     }
   });
+  const btnTop = document.getElementById('scroll-top');
   window.onscroll = function () {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
           btnTop.style.display = "block";
       } else {
           btnTop.style.display = "none";
       }
   }
+  btnTop.onclick = function () {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0; 
+  };
 </script>
 </html>
 

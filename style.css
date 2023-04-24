@@ -53,14 +53,13 @@ header{
 }
 #burger{
 position: fixed;
-display: flex;
+display: none;
 top: 0px;
 width: 50px;
 height: 50px;
 right: -10px;
 cursor: pointer;
 align-items: center;
-background: greeen;
 }
 #burger-line{
 position: absolute;
@@ -128,9 +127,6 @@ justify-content: space-between;
    font-size: 21px;
    margin-top: 35px;
 }
-@media (max-width: 800px) { .sams-li{
-    font-size: 16px;}
- }
 .socials {
     display: grid;
     grid-gap: 40px;
@@ -154,12 +150,6 @@ justify-content: space-between;
 .media a:hover {
     transform: scale(1.04) ;
     transition: all 0.5s ease;
-}
-@media (max-width: 800px) { 
-    .media a:hover {
-        transform: scale(1.15) ;
-        transition: all 0.5s ease;
-    }
 }
 .pic1{
     padding: 5px;
@@ -277,7 +267,7 @@ justify-content: space-between;
     padding-top: 20px;
     box-shadow: 0px 0px 10px rgb(16, 19, 76);
     justify-content: center;
-    background-color: rgb(40, 86, 119);
+    background-color: #404850;
     display: block;
   }
   .sams-li li{
@@ -285,7 +275,13 @@ justify-content: space-between;
     margin-bottom: 10px;
     font-size: 20px;
   }
-  
+  .media a:hover {
+      transform: scale(1.15) ;
+      transition: all 0.5s ease;
+  }
+  #burger{
+    display: flex;
+  }
 }
 .project{
     display: flexs;
@@ -361,18 +357,16 @@ height: 450px;
 .signin{
     font-size: large;
     font-family: monospace, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #6668d9;
+    background-color: #404850;
     margin: 50px 10px;
     border-radius: 10px;
-    box-shadow: var(--shadow);
 }
 .signup{
     font-size: large;
     font-family: monospace, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #6668d9;
+    background-color: #404850;
     margin: 50px 10px;
     border-radius: 10px;
-    box-shadow: var(--shadow);
 }
 input{
     height: 25px;
@@ -405,26 +399,21 @@ margin-left:75px ;
 margin-left: 50px;
 }
 footer{
-    display: grid;
-    grid-gap: 10%;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-    "span contact";
-    background: #6668d9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #404850;
+    color: aliceblue;
+    padding: 0 5px;
 }
 .gridone{
     grid-area: span;
-   font-size: 29px;
-   text-align: start;
+   font-size: 20px;
+   text-align: center;
 }
-.contact{
-    grid-area: contact;
-    margin-left: 40%;
-}
+
 .contact1{
     padding: 5px;
     background: #1d1e20;
     border-radius: 9px;
-    margin-right: 13%;
-    margin-top: 1px;
 }
